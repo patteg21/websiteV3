@@ -1,0 +1,31 @@
+.ALL-PAGES{
+    padding-top: 40px;
+}
+
+.TopBar{
+    z-index: 2;
+    width: 100%;
+    min-height: 40px;
+    max-height: 40px;
+    position: fixed;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.TopBar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.TopBar li{
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+}
+
+.TopBar li:hover{
+    filter: brightness(.8);
+    cursor: pointer;
+}
