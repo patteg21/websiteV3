@@ -1,4 +1,5 @@
 .Home{
+    text-align: center;
 }
 
 .Home *{
@@ -6,54 +7,21 @@
     padding: 0px;
 }
 
-.image-container{
+.HomeHeader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Home-Header{
+    min-width: 450px;
+    max-width: 450px;
+    font-size: 35px;
+    padding: 20px;
     text-align: center;
-
-    width: 100%;
-    height: 400px;
-}
-
-.under-image{
-    border: 1px solid black;
-    padding: 205px;
-    width: 100%;
-    font-size: 100px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 2s ease-in-out;
 }
 
 
-
-.over-image{
-    background-color: green;
-    border: 1px solid black;
-    padding: 205px;
-    color: greenyellow;
-    width: 100%;
-    font-size: 100px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
-    transition: all 2s ease-in-out;
+.animate-image > img{
+    height: 25px;
 }
-
-.over-image:hover{
-    font-size: 100px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.under-image:hover ~ .over-image{
-    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-}
-

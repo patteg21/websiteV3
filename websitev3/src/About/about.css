@@ -1,0 +1,16 @@
+.About{
+
+}
+
+.Draggable{
+    cursor: grab;
+    border: 1px solid transparent;
+}
+
+.Draggable:hover{
+    border: 1px dotted gray;
+}
+
+.About-Header{
+    text-align: center;
+}
