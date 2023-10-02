@@ -48,11 +48,8 @@ export default function HomeHeader(){
 
     return(
         <div className="HomeHeader">
-            <div className="background-overlay"><div className="background-image"></div></div>
             <h1 className="Home-Header" >
-                <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>
-                {' '}Unlock the potential of{' '}
-                <animated.span style={props}>{words[index]}</animated.span>
+                <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>{' '}Unlock the potential of{' '}<animated.span style={props}>{words[index]}</animated.span>
             </h1>
         </div>
     )

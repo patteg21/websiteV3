@@ -12,5 +12,13 @@ export default function Home(){
     return(
         <div className="Home">
             <HomeHeader />
+            <div className="Intro-Section">
+                <div className="Home-Welcome"
+                >
+                    <h1 className="text-12"
+                    >Welcome to the Next Generation of Software</h1>
+                </div>
+
+            </div>
         </div>
     )}
