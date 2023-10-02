@@ -16,7 +16,9 @@ export default function Home(){
                 <div className="Home-Welcome">
                     <h1 className="text-12">Welcome to the Next Generation of <span className="text-primary text-16">Software</span></h1>
                 </div>
-
+                <div className="Get-Connected">
+                    <h1 className="bg-primary">Connect</h1>
+                </div>
             </div>
         </div>
     )}
