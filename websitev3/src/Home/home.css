@@ -18,8 +18,8 @@
 
 .Home-Header{
     padding-top: 10px;
-    min-width: 560px;
-    max-width: 560px;
+    min-width: 620px;
+    max-width: 620px;
     font-size: 35px;
     text-align: center;
     display: flex;
@@ -28,9 +28,11 @@
 
 .Home-Header > span{
     margin: 0 10px;
+    text-align: center;
 }
 
 .animate-image > img{
+    text-align: center;
     width: 30px;
 }
 

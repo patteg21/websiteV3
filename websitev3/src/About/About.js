@@ -10,8 +10,6 @@ import Draggable, {DraggableCore} from "react-draggable";
 import { ResizableBox } from 'react-resizable';
 
 
-import background from "./blackhole2.png"
-
 import "./about.css"
 
 export default function About(){
@@ -19,6 +17,9 @@ export default function About(){
     return(
         <div className="About">
             <Map />
+            <div className="About-Grid">
+                <div>Yo</div>
+            </div>
         </div>
     )
 }

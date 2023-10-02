@@ -41,7 +41,7 @@ export default function Map(){
         });
     
         const svgMap = map.getSVG({
-            radius: 0.22,
+            radius: 0.30,
             color: '#9B938B',
             shape: 'circle',
             backgroundColor: 'transparent',
@@ -54,7 +54,7 @@ export default function Map(){
     return(
         <div className="Map">
             <div className="WorldMap">
-            { mapLoading ? <h1>Loading...</h1> : <img src={`data:image/svg+xml;utf8,${encodeURIComponent(createMap)}`} />}
+            { mapLoading ? <h1 className="text-center">Loading...</h1> : <img src={`data:image/svg+xml;utf8,${encodeURIComponent(createMap)}`} />}
             </div>
         </div>
     )

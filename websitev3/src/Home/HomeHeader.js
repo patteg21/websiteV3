@@ -48,7 +48,7 @@ export default function HomeHeader({index, setIndex}){
         <div className="HomeHeader">
             <h1 className="Home-Header" >
                 <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>
-                {' '}Unlock the potential of{' '}
+                {' '}Unlocking the potential of{' '}
                 <animated.span style={props}>{words[index]}</animated.span>
             </h1>
         </div>
