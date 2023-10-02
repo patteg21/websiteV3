@@ -80,3 +80,9 @@ to {
     opacity: 0;
 }
 }
+
+.Link-Area{
+    grid-row:4;
+    grid-column: 1;
+    text-align: center;
+}

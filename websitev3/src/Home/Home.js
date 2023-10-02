@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // https://www.npmjs.com/package/js-confetti
 import JSConfetti from 'js-confetti'
 // https://www.npmjs.com/package/dotted-map?activeTab=readme
@@ -11,16 +11,20 @@ import HomeHeader from "./HomeHeader";
 
 
 export default function Home(){
+    const copyEmail = useRef(null)
 
 
 
     function handleConnectClick(event){
+        navigator.clipboard.writeText(copyEmail.current.value)
+
+        console.log(copyEmail.current.value)
+
+
         const button = event.currentTarget
         const circle = document.createElement("span");
         const diameter = Math.max(button.clientWidth, button.clientHeight);
         const radius = diameter / 2;
-
-        console.log(radius)
 
         circle.style.width = circle.style.height = `${diameter}px`;
         circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
@@ -39,7 +43,6 @@ export default function Home(){
                 'rgb(142, 5, 194)', 'rgb(142, 5, 194)', '#DDA0DD', '#8F00FF', '#DA70D6', '#BA55D3',
               ],
         })
-        console.log('Confetti animation completed!')
     }
 
 
@@ -47,13 +50,25 @@ export default function Home(){
         <div className="Home">
             <HomeHeader />
             <div className="Intro-Section">
+
+                <div className="Get-Connected">
+                        <h1>Gareth Patterson</h1>
+                        <p className="text-sm">Full-Stack Developer | Machine Learning Enthusiast</p>
+                        <input
+                            ref={copyEmail}
+                            type="hidden"
+                            value="patteg7@gmail.com" 
+                        />
+                        <button 
+                        onClick={handleConnectClick} 
+                        className="connect-button text-sm p-5 bg-primary m-5 rounded-sm">
+                        Get Connected</button>
+                </div>
                 <div className="Home-Welcome">
                     <h1 className="text-lg w-60">The Next Generation of <span className="text-primary text-lg">Software Development</span></h1>
                 </div>
-                <div className="Get-Connected">
-                    <h1>Gareth Patterson</h1>
-                    <p className="text-sm">Full-Stack Developer | Machine Learning Enthusiast</p>
-                    <button onClick={handleConnectClick} className="connect-button text-sm p-5 bg-primary m-5 rounded-sm">Get Connected</button>
+                <div className="Link-Area">
+                    <p>Yo</p>
                 </div>
             </div>
         </div>
