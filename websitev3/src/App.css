@@ -26,7 +26,14 @@
 .TopBar li{
     color: #8E05C2;
     display: inline-block;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 5px 0px 5px;
+    padding: 0px;
+}
+
+.TopBar li > img{
+    color: #8E05C2;
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
     padding: 0px;
 }
 
