@@ -10,8 +10,7 @@ import flaskImg from "./imgs/flask.png"
 import mongodbImg from "./imgs/mongodb.png"
 
 
-export default function HomeHeader(){
-    const [index, setIndex] = useState(0)
+export default function HomeHeader({index, setIndex}){
     
     const colors = ["#60dbfb","#01b9d8","#015a33","#f1c40e","#68a063","white","#95c38c"]
     const words = ['React', 'Tailwind', 'Django','Express', 'Node','Flask','MongoDB']
@@ -22,7 +21,7 @@ export default function HomeHeader(){
         color: colors[index],
         opacity: 1,
         transform: 'translateY(0%)', 
-        from: {opacity:0, transform: 'translateY(100%)'  },
+        from: {opacity:0, transform: 'translateY(-30%)'  },
         reset: true,
     });
 
@@ -30,7 +29,7 @@ export default function HomeHeader(){
         color: colors[index],
         opacity: 1,
         transform: 'translateY(0%)', 
-        from: {opacity:0, transform: 'translateY(100%)' },
+        from: {opacity:0, transform: 'translateY(-30%)' },
         reset: true,
     });
 

@@ -87,14 +87,22 @@ to {
     text-align: center;
 }
 
+.Link-Area a:hover{
+    filter: brightness(.8);
+}
+
+.ResumeClick{
+    cursor: pointer;
+}
+
 .SnackBar{
     position: absolute;
     bottom: 10%;
     right: 10%;
     width: 150px;
-    height: 30px;
+    height: 40px;
     left:auto;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     text-align: center;
     justify-content: center;
