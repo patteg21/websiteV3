@@ -13,10 +13,8 @@ export default function Home(){
         <div className="Home">
             <HomeHeader />
             <div className="Intro-Section">
-                <div className="Home-Welcome"
-                >
-                    <h1 className="text-12"
-                    >Welcome to the Next Generation of Software</h1>
+                <div className="Home-Welcome">
+                    <h1 className="text-12">Welcome to the Next Generation of <span className="text-primary text-16">Software</span></h1>
                 </div>
 
             </div>
