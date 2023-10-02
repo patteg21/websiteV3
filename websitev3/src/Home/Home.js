@@ -14,7 +14,7 @@ export default function Home(){
             <HomeHeader />
             <div className="Intro-Section">
                 <div className="Home-Welcome">
-                    <h1 className="text-12">Welcome to the Next Generation of <span className="text-primary text-16">Software</span></h1>
+                    <h1 className="text-12">The Next Generation of <span className="text-primary text-16">Software</span></h1>
                 </div>
                 <div className="Get-Connected">
                     <h1 className="bg-primary">Connect</h1>

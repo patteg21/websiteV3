@@ -36,7 +36,6 @@ export default function HomeHeader(){
 
     useEffect(() => {
 
-
         const interval = setInterval(() => {
           setIndex((prevIndex) => (prevIndex + 1) % words.length);
         }, 1000);
@@ -49,7 +48,9 @@ export default function HomeHeader(){
     return(
         <div className="HomeHeader">
             <h1 className="Home-Header" >
-                <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>{' '}Unlock the potential of{' '}<animated.span style={props}>{words[index]}</animated.span>
+                <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>
+                {' '}Unlock the potential of{' '}
+                <animated.span style={props}>{words[index]}</animated.span>
             </h1>
         </div>
     )

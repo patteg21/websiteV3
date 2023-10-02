@@ -41,3 +41,8 @@
     filter: brightness(.8);
     cursor: pointer;
 }
+
+.TopBar li>img:hover{
+    filter: brightness(1.8);
+    cursor: pointer;
+}
