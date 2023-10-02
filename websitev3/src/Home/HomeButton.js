@@ -5,16 +5,19 @@ import JSConfetti from 'js-confetti'
 import DottedMap from 'dotted-map';
 import { useSpring, animated } from 'react-spring';
 
-export default function HomeButton(){
+export default function HomeButton({setSnackBarShow, snackBarShow}){
     const copyEmail = useRef(null)
 
-
+    function snackBarPopUp(){
+        console.log(snackBarShow)
+        setSnackBarShow(true)
+        setTimeout(()=>{
+            setSnackBarShow(false)
+        },1500)
+    }
 
     function handleConnectClick(event){
         navigator.clipboard.writeText(copyEmail.current.value)
-
-        console.log(copyEmail.current.value)
-
 
         const button = event.currentTarget
         const circle = document.createElement("span");
@@ -38,6 +41,8 @@ export default function HomeButton(){
                 'rgb(142, 5, 194)', 'rgb(142, 5, 194)', '#DDA0DD', '#8F00FF', '#DA70D6', '#BA55D3',
               ],
         })
+
+        snackBarPopUp()
     }
 
     return(

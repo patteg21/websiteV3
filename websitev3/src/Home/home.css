@@ -86,3 +86,17 @@ to {
     grid-column: 1;
     text-align: center;
 }
+
+.SnackBar{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 150px;
+    height: 30px;
+    left:auto;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
