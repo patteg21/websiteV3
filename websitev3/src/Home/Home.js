@@ -22,7 +22,7 @@ export default function Home(){
                     <h1 className="text-lg w-60">The Next Generation of <span className="text-primary text-lg">Software Development</span></h1>
                 </div>
                 <div className="Link-Area">
-                    <p>Yo</p>
+                    <p className="p-10 w-80">LinkedIn | Github | Resume</p>
                 </div>
             </div>
         </div>
