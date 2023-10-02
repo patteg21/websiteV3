@@ -13,7 +13,7 @@ import mongodbImg from "./imgs/mongodb.png"
 export default function HomeHeader(){
     const [index, setIndex] = useState(0)
     
-    const colors = ["#60dbfb","#01b9d8","#113527","#393937","#68a063","black","#95c38c"]
+    const colors = ["#60dbfb","#01b9d8","#015a33","#f1c40e","#68a063","white","#95c38c"]
     const words = ['React', 'Tailwind', 'Django','Express', 'Node','Flask','MongoDB']
     const icons = [<img src={reactImg}/>,<img src={tailwindImg}/>,<img src={djangoImg}/>,<img src={expressImg}/>,<img src={nodeImg}/>,<img src={flaskImg}/>,<img src={mongodbImg}/>]
 
@@ -48,6 +48,7 @@ export default function HomeHeader(){
 
     return(
         <div className="HomeHeader">
+            <div className="background-overlay"><div className="background-image"></div></div>
             <h1 className="Home-Header" >
                 <animated.span style={imgProps} className="animate-image">{icons[index]}</animated.span>
                 {' '}Unlock the potential of{' '}

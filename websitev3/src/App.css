@@ -9,7 +9,6 @@
     max-height: 40px;
     position: fixed;
     text-align: center;
-    background-color: white;
     box-shadow: 0 0 20px 5px rgb(142, 5, 194,0.5);
 }
 .TopBar ul{ 
