@@ -3,6 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .Home{
+    /* position: fixed; */
     background: radial-gradient(circle, black, rgb(142, 5, 194,0.2));
 }
 

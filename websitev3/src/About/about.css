@@ -7,15 +7,17 @@
 
 }
 
-.Draggable{
-    cursor: grab;
-    border: 1px solid transparent;
-}
-
-.Draggable:hover{
-    border: 1px dotted gray;
-}
-
-.About-Header{
+.Map{
+    display: flex;
+    width: 100%;
+    align-self: center;
     text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.WorldMap{
+    display: flex;
+    width: 50%;
+    align-self: center;
 }
