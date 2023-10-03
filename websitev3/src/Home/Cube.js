@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import * as THREE from 'three'; // Import Three.js library
 
 
-export default function Cube({x, y, z, insideText}) {
+export default function Cube() {
   useEffect(() => {
 
     var vertexShader = `
@@ -97,20 +97,30 @@ export default function Cube({x, y, z, insideText}) {
 
     material.uniforms.bordercolor = { value: borderColor };
     material.uniforms.bgcolor = { value: bgColor };
-
+  
 
     const cube = new THREE.Mesh(geometry, material);
     cube.position.set(0, 0, -10);
     cube.castShadow = true;
     cube.receiveShadow = true;
+
+    const cubeTwo = new THREE.Mesh(geometry, material);
+    cubeTwo.position.set(7, 0, 0);
+    cubeTwo.castShadow = true;
+    cubeTwo.receiveShadow = true;
+    scene.add(cubeTwo);
+
     scene.add(cube);
 
     camera.position.z = 5;
 
+
     // Animation function
     function animate() {
         requestAnimationFrame(animate);
-  
+
+        cubeTwo.rotation.x += 0.02;
+        cubeTwo.rotation.y += 0.02;
 
         cube.rotation.x += 0.02;
         cube.rotation.y += 0.02;
