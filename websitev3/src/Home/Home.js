@@ -22,6 +22,7 @@ export default function Home(){
 
     return(
         <div className="Home">
+        <Cube />
             <HomeHeader index={index} setIndex={setIndex}/>
             <div className="Intro-Section">
                 <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
@@ -35,6 +36,5 @@ export default function Home(){
                 </div>
                 {snackBarShow ? <animated.div style={fadeInOut} className="SnackBar bg-primary rounded-sm text-sm">Email Copied</animated.div>: null}
             </div>
-            <Cube />
         </div>
     )}
