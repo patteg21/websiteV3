@@ -9,6 +9,7 @@ import HomeHeader from "./HomeHeader";
 import HomeButton from "./HomeButton";
 import Cube from "./Cube";
 import CubeBlocks from "./CubeBlocks";
+import NavCube from "./NavCube";
 
 export default function Home(){
     const [index, setIndex] = useState(0)
@@ -23,6 +24,7 @@ export default function Home(){
 
     return(
         <div className="Home">
+        <NavCube/>
         <Cube />
             <HomeHeader index={index} setIndex={setIndex}/>
             <div className="Intro-Section">

@@ -134,3 +134,52 @@ to {
     margin: -2px;
     border: 2px solid rgb(142, 5, 194);
 } */
+
+
+.NavCube *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.NavCube{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+    transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.NavCube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.NavCube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, rgb(142, 5, 194,0.5));
+    transform: rotateY(calc(90deg * var(--i))) 
+    translateZ(150px);
+}
+
+.Top-NavCube{
+    
+}
