@@ -74,7 +74,7 @@ export default function Cube() {
               value: 0.01
           },
           smoothness: {
-              value: 0.01
+              value: 0.05
           }
         },
         
@@ -112,8 +112,8 @@ export default function Cube() {
         requestAnimationFrame(animate);
   
 
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+        cube.rotation.x += 0.02;
+        cube.rotation.y += 0.02;
   
         renderer.render(scene, camera);
     }

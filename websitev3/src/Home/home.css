@@ -86,6 +86,7 @@ to {
     grid-row:4;
     grid-column: 1;
     text-align: center;
+    z-index: 1;
 }
 
 .Link-Area a:hover{
@@ -116,7 +117,7 @@ to {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100; /* Ensure the canvas appears on top of other elements */
+    z-index: 0; /* Ensure the canvas appears on top of other elements */
 }
 
 .Cube *{
