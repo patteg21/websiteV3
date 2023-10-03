@@ -117,7 +117,8 @@ to {
     top: 0;
     left: 0;
     z-index: 100; /* Ensure the canvas appears on top of other elements */
-  }
+}
 
-.Cube{
+.Cube *{
+    left: 100%;
 }
