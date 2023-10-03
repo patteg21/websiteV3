@@ -74,7 +74,7 @@ export default function Cube() {
               value: 0.01
           },
           smoothness: {
-              value: 0.2
+              value: 0.01
           }
         },
         
