@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 // https://www.npmjs.com/package/js-confetti
 import JSConfetti from 'js-confetti'
-// https://www.npmjs.com/package/dotted-map?activeTab=readme
-import DottedMap from 'dotted-map';
+
 import { useSpring, animated } from 'react-spring';
 
 import "./home.css"
 import HomeHeader from "./HomeHeader";
 import HomeButton from "./HomeButton";
+import Cube from "./Cube";
 
 export default function Home(){
     const [index, setIndex] = useState(0)
@@ -35,5 +35,6 @@ export default function Home(){
                 </div>
                 {snackBarShow ? <animated.div style={fadeInOut} className="SnackBar bg-primary rounded-sm text-sm">Email Copied</animated.div>: null}
             </div>
+            <Cube />
         </div>
     )}

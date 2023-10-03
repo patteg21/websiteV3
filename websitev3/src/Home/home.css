@@ -7,8 +7,6 @@
     background: radial-gradient(circle, black, rgb(142, 5, 194,0.2));
 }
 
-
-
 .HomeHeader{
     display: flex;
     justify-content: center;
@@ -110,4 +108,10 @@ to {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.Cube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
