@@ -63,7 +63,7 @@ export default function Cube() {
 
     // const geometry = new THREE.BoxGeometry(1, 1, 1);
 
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    const geometry = new THREE.BoxGeometry( 1.5, 1.5, 1.5 );
 
     const material = new THREE.ShaderMaterial({
         uniforms: {
@@ -120,7 +120,7 @@ export default function Cube() {
     cubeFour.receiveShadow = true;
     
     const cubeFive = new THREE.Mesh(geometry, material);
-    cubeFive.position.set(8, -5, 4);
+    cubeFive.position.set(6, -4, 2);
     cubeFive.castShadow = true;
     cubeFive.receiveShadow = true;
     
