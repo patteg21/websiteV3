@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import * as THREE from 'three'; // Import Three.js library
 
 
-export default function Cube() {
+export default function Cube({x, y, z, insideText}) {
   useEffect(() => {
 
     var vertexShader = `
@@ -41,7 +41,7 @@ export default function Cube() {
     const containerHeight = 600; 
     const aspectRatio = containerWidth / containerHeight;
     const camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
-    camera.position.set(-4, 5, 5); // Adjust the z-coordinate to move the camera backward or forward
+    camera.position.set(-4, 5, 5);
     camera.lookAt(0, 0, 0);
 
 
