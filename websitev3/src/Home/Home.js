@@ -8,6 +8,7 @@ import "./home.css"
 import HomeHeader from "./HomeHeader";
 import HomeButton from "./HomeButton";
 import Cube from "./Cube";
+import CubeBlocks from "./CubeBlocks";
 
 export default function Home(){
     const [index, setIndex] = useState(0)

@@ -108,22 +108,71 @@ export default function Cube() {
     cubeTwo.position.set(7, 0, 0);
     cubeTwo.castShadow = true;
     cubeTwo.receiveShadow = true;
-    scene.add(cubeTwo);
 
+    const cubeThree = new THREE.Mesh(geometry, material);
+    cubeThree.position.set(0, -5, 0);
+    cubeThree.castShadow = true;
+    cubeThree.receiveShadow = true;
+
+    const cubeFour = new THREE.Mesh(geometry, material);
+    cubeFour.position.set(-4, -7, -5);
+    cubeFour.castShadow = true;
+    cubeFour.receiveShadow = true;
+    
+    const cubeFive = new THREE.Mesh(geometry, material);
+    cubeFive.position.set(8, -5, 4);
+    cubeFive.castShadow = true;
+    cubeFive.receiveShadow = true;
+    
+    const cubeSix = new THREE.Mesh(geometry, material);
+    cubeSix.position.set(5, 1, -6);
+    cubeSix.castShadow = true;
+    cubeSix.receiveShadow = true;
+
+    const cubeSeven = new THREE.Mesh(geometry, material);
+    cubeSeven.position.set(-3, -2, -7);
+    cubeSeven.castShadow = true;
+    cubeSeven.receiveShadow = true;
+    
+    
+
+    scene.add(cubeSeven);
+    scene.add(cubeSix);
+    scene.add(cubeFive);
+    scene.add(cubeFour);
+    scene.add(cubeThree);
+    scene.add(cubeTwo);
     scene.add(cube);
 
     camera.position.z = 5;
+
+
 
 
     // Animation function
     function animate() {
         requestAnimationFrame(animate);
 
-        cubeTwo.rotation.x += 0.02;
-        cubeTwo.rotation.y += 0.02;
+        cubeSeven.rotation.x -= 0.01;
+        cubeSeven.rotation.y -= 0.005;
 
-        cube.rotation.x += 0.02;
-        cube.rotation.y += 0.02;
+        cubeSix.rotation.x -= 0.001;
+        cubeSix.rotation.y -= 0.02;
+
+        cubeFive.rotation.x += 0.03;
+        cubeFive.rotation.y -= 0.001;
+
+        cubeFour.rotation.x += 0.02;
+        cubeFour.rotation.y -= 0.001;
+
+        cubeThree.rotation.x += 0.01;
+        cubeThree.rotation.y += 0.01;
+
+        cubeTwo.rotation.x += 0.02;
+        cubeTwo.rotation.y -= 0.02;
+
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.03;
   
         renderer.render(scene, camera);
     }

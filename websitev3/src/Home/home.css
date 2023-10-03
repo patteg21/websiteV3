@@ -123,3 +123,15 @@ to {
 .Cube *{
     left: 100%;
 }
+
+/* .CubeBlocks{
+    position: absolute;
+}
+
+.Tet-Cube{
+    background-color: black;
+    min-height: 50px;
+    min-width: 50px;
+    margin: -2px;
+    border: 2px solid rgb(142, 5, 194);
+} */
