@@ -8,17 +8,21 @@ import { useSpring, animated } from 'react-spring';
 
 export default function DesiredTitle(){
     const words = [
-        "Frontend Dev",
-        "Backend Dev",
-        "FullStack Dev",
+        "Frontend Developer",
+        "Backend Developer",
         "Designer",
-        "Machine Learning Enthusiast",
+        "ML Enthusiast",
         "Sith Lord",
     ]
-
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
 
+    const wordAnimate = useSpring({
+      opacity: 1,
+      transform: 'translateY(0%)', 
+      from: {opacity:0, transform: 'translateY(-30%)'  },
+      reset: true,
+    })
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -28,7 +32,7 @@ export default function DesiredTitle(){
           setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
           setCurrentWord(words[currentWordIndex]);
 
-          if (currentWordIndex === 5){
+          if (currentWordIndex === 4){
             element[0].style.background = "radial-gradient(circle, black, rgb(138, 3, 3,0.5))"
           }
 
@@ -38,7 +42,7 @@ export default function DesiredTitle(){
       }, [currentWordIndex]);
     return(
         <div className="DesiredRole">
-            <h1 className="typing-effect">{currentWord}</h1>
+            <animated.h1 style={wordAnimate} className="typing-effect">{currentWord}</animated.h1>
         </div>
     )
 }
