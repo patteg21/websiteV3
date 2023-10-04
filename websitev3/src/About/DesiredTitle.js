@@ -37,7 +37,7 @@ export default function TitleArea(){
             element[0].style.background = "radial-gradient(circle, black, rgb(138, 3, 3,0.5))"
           }
 
-        }, 2000); // Change word every 2 seconds
+        }, 2500); // Change word every 2 seconds
     
         return () => clearInterval(interval);
       }, [currentWordIndex]);

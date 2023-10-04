@@ -3,7 +3,9 @@ import React from "react";
 export default function SkillsArea(){
 
     return(
-        <div className="SkillsArea grid grid-cols-2 gap-4">
+        <div className="SkillsArea">
+            <h1 className="p-5 text-xl text-primary">Skills</h1>
+            <div className="grid grid-cols-2 gap-4">
             <ul className="">
                 <li>Python</li>
                 <li>JavaScript</li>
@@ -26,6 +28,7 @@ export default function SkillsArea(){
                 <li>Tailwind</li>
                 <li>Blender</li>
             </ul>
+            </div>
         </div>
     )
 }

@@ -10,8 +10,15 @@ import NavCube from "./NavCube";
 import Footer from "../Footer";
 
 export default function Home(){
-    const [index, setIndex] = useState(0)
     const[snackBarShow,setSnackBarShow] = useState(false)
+
+    const fadeInOutMain = useSpring({
+        opacity: 1 ,
+        display: 'block',
+        transform: 'translateY(0%)', 
+        from: {opacity:0, transform: 'translateY(100%)' },
+    });
+
 
     const fadeInOut = useSpring({
         opacity: snackBarShow ? 1 : 0,
@@ -21,7 +28,7 @@ export default function Home(){
 
 
     return(
-        <div className="Home">
+        <animated.div style={fadeInOutMain} className="Home">
             <Cube />
         <div className="Name-Header">
             <h1>Gareth Patterson</h1>
@@ -42,5 +49,5 @@ export default function Home(){
                 {snackBarShow ? <animated.div style={fadeInOut} className="SnackBar bg-primary rounded-sm text-sm">Email Copied</animated.div>: null}
             </div>
             <Footer />
-        </div>
+        </animated.div>
     )}
