@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 
 import JSConfetti from 'js-confetti'
 
+import Typewriter from "typewriter-effect";
 import { useSpring, animated } from 'react-spring';
 
 
 export default function DesiredTitle(){
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    
     const words = [
         "Frontend Dev",
         "Backend Dev",
         "FullStack Dev",
-        "Shadow Ninja",
+        "Designer",
         "Machine Learning Enthusiast",
         "Sith Lord",
     ]
-    
+
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
 
 
