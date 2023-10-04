@@ -135,6 +135,12 @@ to {
     border: 2px solid rgb(142, 5, 194);
 } */
 
+.Cube-Holder{
+    grid-column: 3;
+    grid-row:2;
+    text-align: center;
+}
+
 
 .NavCube *{
     margin: 0px;
@@ -148,7 +154,7 @@ to {
     height: 300px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: animate 8s linear infinite;
+    animation: animate 16s linear infinite;
 }
 
 @keyframes animate {
@@ -181,5 +187,23 @@ to {
 }
 
 .Top-NavCube{
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    width: 300px;
+    background: black;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.Top-NavCube::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background:rgb(142, 5, 194,0.5);
+    transform: translateZ(-300px);
+    filter: blur(20px);
 }
