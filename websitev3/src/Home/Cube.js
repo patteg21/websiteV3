@@ -105,12 +105,12 @@ export default function Cube() {
     cube.receiveShadow = true;
 
     const cubeTwo = new THREE.Mesh(geometry, material);
-    cubeTwo.position.set(7, 0, 0);
+    cubeTwo.position.set(7, 2, 0);
     cubeTwo.castShadow = true;
     cubeTwo.receiveShadow = true;
 
     const cubeThree = new THREE.Mesh(geometry, material);
-    cubeThree.position.set(0, -5, 0);
+    cubeThree.position.set(10, -3, 0);
     cubeThree.castShadow = true;
     cubeThree.receiveShadow = true;
 
@@ -120,12 +120,12 @@ export default function Cube() {
     cubeFour.receiveShadow = true;
     
     const cubeFive = new THREE.Mesh(geometry, material);
-    cubeFive.position.set(6, -4, 2);
+    cubeFive.position.set(6, -11, 3);
     cubeFive.castShadow = true;
     cubeFive.receiveShadow = true;
     
     const cubeSix = new THREE.Mesh(geometry, material);
-    cubeSix.position.set(7, -6, 5);
+    cubeSix.position.set(7, -6, 4);
     cubeSix.castShadow = true;
     cubeSix.receiveShadow = true;
 

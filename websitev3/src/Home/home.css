@@ -154,7 +154,7 @@ to {
     height: 300px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: animate 16s linear infinite;
+    animation: animate 20s linear infinite;
 }
 
 @keyframes animate {
@@ -175,6 +175,9 @@ to {
     transform-style: preserve-3d;
 }
 
+.NavCube div:hover{
+}
+
 .NavCube div span{
     position: absolute;
     top: 0;
@@ -186,6 +189,18 @@ to {
     /* background: linear-gradient(black, rgb(142, 5, 194,0.5)); */
     transform: rotateY(calc(90deg * var(--i))) 
     translateZ(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavCube div span:hover{
+    filter: brightness(.5);
+    background: linear-gradient(black,rgb(142, 5, 194, .5));
+}
+
+.NavCube div span h1{
+    font-size: 50px;
 }
 
 .Top-NavCube{

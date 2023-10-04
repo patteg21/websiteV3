@@ -1,28 +1,28 @@
 import React from "react";
-
-import HomeButton from "./HomeButton";
-
-import Draggable, {DraggableCore} from "react-draggable";
+import { Link } from "react-router-dom";
 
 export default function NavCube({setSnackBarShow, snackBarShow}){
     return(
         <div className="NavCube">
         <div className="Top-NavCube"></div>
             <div>
-                <span style={{'--i': 0}}>
+            <span style={{'--i': 0}}>
+                    <Link to="/">
                     <h1>Home</h1>
-                    <h1>Home</h1>
+                    </Link>
                 </span>
                 <span style={{'--i': 1}}>
+                    <Link to="/about">
                     <h1>About</h1>
-                    <h1>About</h1>
+                    </Link>
                 </span>
                 <span style={{'--i': 2}}>
+                    <Link to="/resume">
                     <h1>Resume</h1>
-                    <h1>Resume</h1>
+                    </Link>
                 </span>
                 <span style={{'--i': 3}}>
-                    <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
+                    {/* <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/> */}
                 </span>
             </div>    
         </div>
