@@ -5,10 +5,7 @@ import JSConfetti from 'js-confetti'
 import { useSpring, animated } from 'react-spring';
 
 import "./home.css"
-import HomeHeader from "./HomeHeader";
-import HomeButton from "./HomeButton";
 import Cube from "./Cube";
-import CubeBlocks from "./CubeBlocks";
 import NavCube from "./NavCube";
 
 export default function Home(){

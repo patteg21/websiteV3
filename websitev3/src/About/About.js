@@ -5,7 +5,7 @@ import Draggable, {DraggableCore} from "react-draggable";
 import { ResizableBox } from 'react-resizable';
 import { useSpring, animated } from 'react-spring';
 
-import Map from "./Map";
+import AboutHeader from "./AboutHeader";
 import "./about.css"
 
 export default function About(){
@@ -19,7 +19,7 @@ export default function About(){
 
     return(
         <animated.div style={fadeInOut} className="About">
-            {/* <Map /> */}
+            <AboutHeader />
             <div className="About-Grid">
                 <div>Yo</div>
             </div>
