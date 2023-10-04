@@ -4,9 +4,10 @@ import JSConfetti from 'js-confetti'
 
 import Typewriter from "typewriter-effect";
 import { useSpring, animated } from 'react-spring';
+import AboutHeader from './AboutHeader';
 
 
-export default function DesiredTitle(){
+export default function TitleArea(){
     const words = [
         "Frontend Developer",
         "Backend Developer",
@@ -19,8 +20,8 @@ export default function DesiredTitle(){
 
     const wordAnimate = useSpring({
       opacity: 1,
-      marginRight: 0, 
-      from: { opacity: 0, marginRight: 50 },
+      marginTop: 0, 
+      from: { opacity: 0, marginTop: 100 },
       reset: true,
     })
 
@@ -42,7 +43,9 @@ export default function DesiredTitle(){
       }, [currentWordIndex]);
     return(
         <div className="DesiredRole">
-            <animated.h1 style={wordAnimate} className="typing-effect">{currentWord}</animated.h1>
+            <h1 className='text-xl'>ABOUT</h1>
+            <p className='text-lg'>Hey there! I'm a <animated.span style={wordAnimate} className="typing-effect">{currentWord}</animated.span></p>
+            <AboutHeader />
         </div>
     )
 }

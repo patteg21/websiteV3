@@ -7,6 +7,7 @@ import { useSpring, animated } from 'react-spring';
 import "./home.css"
 import Cube from "./Cube";
 import NavCube from "./NavCube";
+import Footer from "../Footer";
 
 export default function Home(){
     const [index, setIndex] = useState(0)
@@ -40,6 +41,6 @@ export default function Home(){
                 </div>
                 {snackBarShow ? <animated.div style={fadeInOut} className="SnackBar bg-primary rounded-sm text-sm">Email Copied</animated.div>: null}
             </div>
-            <footer className="text-center text-xs p-5"> @ 2023 Gareth Patterson | Technologies: @Tailwind @Three.js @React @Blender</footer>
+            <Footer />
         </div>
     )}
