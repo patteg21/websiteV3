@@ -11,8 +11,8 @@ import mongodbImg from "./imgs/mongodb.png"
 import threeImg from "./imgs/Three.png"
 
 
-export default function HomeHeader({index, setIndex}){
-    
+export default function HomeHeader(){
+    const [index, setIndex] = useState(0)
     const colors = ["#60dbfb","#01b9d8","#015a33","#f1c40e","#68a063","white","#95c38c","#433d83"]
     const words = ['React', 'Tailwind', 'Django','Express', 'Node','Flask','MongoDB',"Three.js"]
     const icons = [<img src={reactImg}/>,<img src={tailwindImg}/>,<img src={djangoImg}/>,<img src={expressImg}/>,<img src={nodeImg}/>,<img src={flaskImg}/>,<img src={mongodbImg}/>, <img src={threeImg}/>]

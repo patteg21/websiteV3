@@ -46,8 +46,6 @@ export default function HomeButton({setSnackBarShow, snackBarShow}){
 
     return(
     <div className="Get-Connected">
-        <h1>Gareth Patterson</h1>
-        <p className="text-sm">Full-Stack Developer | Machine Learning Enthusiast</p>
         <input
             ref={copyEmail}
             type="hidden"
@@ -55,7 +53,7 @@ export default function HomeButton({setSnackBarShow, snackBarShow}){
         />
         <button 
         onClick={handleConnectClick} 
-        className="connect-button text-sm p-5 bg-primary m-5 rounded-sm">
+        className="connect-button">
         Get Connected</button>
     </div>
     )

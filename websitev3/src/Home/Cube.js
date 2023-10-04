@@ -100,7 +100,7 @@ export default function Cube() {
   
 
     const cube = new THREE.Mesh(geometry, material);
-    cube.position.set(0, 0, -10);
+    cube.position.set(0, 0, -11);
     cube.castShadow = true;
     cube.receiveShadow = true;
 

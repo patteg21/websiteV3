@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import HomeButton from "./HomeButton";
+
 export default function NavCube({setSnackBarShow, snackBarShow}){
     return(
         <div className="NavCube">
@@ -21,8 +23,8 @@ export default function NavCube({setSnackBarShow, snackBarShow}){
                     <h1>Resume</h1>
                     </Link>
                 </span>
-                <span style={{'--i': 3}}>
-                    {/* <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/> */}
+                <span style={{'--i': 3}} className="HomeButton">
+                    <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
                 </span>
             </div>    
         </div>

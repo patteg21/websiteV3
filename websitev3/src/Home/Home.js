@@ -24,8 +24,11 @@ export default function Home(){
 
     return(
         <div className="Home">
-        <Cube />
-            <HomeHeader index={index} setIndex={setIndex}/>
+            <Cube />
+        <div className="Name-Header">
+            <h1>Gareth Patterson</h1>
+            <p className="text-sm">Full-Stack Developer | Machine Learning Enthusiast</p>
+        </div>
             <div className="Intro-Section">
                 <div className="Home-Welcome">
                     <h1 className="text-lg w-60">The Next Generation of <span className="text-primary text-lg">Software Development</span></h1>
