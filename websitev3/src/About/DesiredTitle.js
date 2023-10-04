@@ -19,8 +19,8 @@ export default function DesiredTitle(){
 
     const wordAnimate = useSpring({
       opacity: 1,
-      transform: 'translateY(0%)', 
-      from: {opacity:0, transform: 'translateY(-30%)'  },
+      marginRight: 0, 
+      from: { opacity: 0, marginRight: 50 },
       reset: true,
     })
 
