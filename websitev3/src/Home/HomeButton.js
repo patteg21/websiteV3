@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 // https://www.npmjs.com/package/js-confetti
 import JSConfetti from 'js-confetti'
 // https://www.npmjs.com/package/dotted-map?activeTab=readme
-import DottedMap from 'dotted-map';
 import { useSpring, animated } from 'react-spring';
 
 export default function HomeButton({setSnackBarShow, snackBarShow}){

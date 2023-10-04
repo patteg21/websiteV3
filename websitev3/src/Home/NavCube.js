@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function NavCube(){
+import HomeButton from "./HomeButton";
+
+import Draggable, {DraggableCore} from "react-draggable";
+
+export default function NavCube({setSnackBarShow, snackBarShow}){
     return(
         <div className="NavCube">
         <div className="Top-NavCube"></div>
@@ -18,8 +22,7 @@ export default function NavCube(){
                     <h1>Resume</h1>
                 </span>
                 <span style={{'--i': 3}}>
-                    <h1>Connect</h1>
-                    <h1>Connect</h1>
+                    <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
                 </span>
             </div>    
         </div>
