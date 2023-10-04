@@ -29,8 +29,7 @@ export default function DesiredTitle(){
           setCurrentWord(words[currentWordIndex]);
 
           if (currentWordIndex === 5){
-
-            element[0].style.background = "radial-gradient(circle, black, red)"
+            element[0].style.background = "radial-gradient(circle, black, rgb(138, 3, 3,0.5))"
           }
 
         }, 2000); // Change word every 2 seconds
