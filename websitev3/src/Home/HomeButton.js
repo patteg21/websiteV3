@@ -54,7 +54,9 @@ export default function HomeButton({setSnackBarShow, snackBarShow}){
         <button 
         onClick={handleConnectClick} 
         className="connect-button">
-        Get Connected</button>
+        Get Connected
+        <p>Click for email!</p>
+        </button>
     </div>
     )
 }
