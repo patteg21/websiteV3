@@ -125,7 +125,7 @@ export default function Cube() {
     cubeFive.receiveShadow = true;
     
     const cubeSix = new THREE.Mesh(geometry, material);
-    cubeSix.position.set(5, 1, -6);
+    cubeSix.position.set(7, -6, 5);
     cubeSix.castShadow = true;
     cubeSix.receiveShadow = true;
 
