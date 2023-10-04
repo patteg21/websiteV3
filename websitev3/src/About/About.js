@@ -7,6 +7,7 @@ import { useSpring, animated } from 'react-spring';
 
 import AboutHeader from "./AboutHeader";
 import "./about.css"
+import DesiredTitle from "./DesiredTitle";
 
 export default function About(){
 
@@ -21,7 +22,7 @@ export default function About(){
         <animated.div style={fadeInOut} className="About">
             <AboutHeader />
             <div className="About-Grid">
-                <div>Yo</div>
+                <DesiredTitle />
             </div>
         </animated.div>
     )
