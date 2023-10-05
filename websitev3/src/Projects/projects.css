@@ -20,28 +20,35 @@
     text-align: center;
     
     padding: 5px;
-    background-color: rebeccapurple;
+    background-color: transparent;
+    border: 2px solid rgb(142, 5, 194);
     min-width: 250px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-.ProjShow{
+.ProjShow {
     position: absolute;
     top: 0;
     left: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 100%;
+    height: 100%;
 }
 
 .ProjDesc{
-    margin: 0;
     border-radius: 10px;
-    background-color: red;
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    transition: height 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
 

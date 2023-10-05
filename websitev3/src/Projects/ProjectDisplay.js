@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, config } from "react-spring";
 
 export default function ProjectDisplay({title}){
     const[showInfo,setShowInfo] = useState(false)
@@ -16,7 +16,10 @@ export default function ProjectDisplay({title}){
         maxHeight: showInfo ? '100%' : '0%',
         opacity: showInfo ? 1 : 0,
         display: showInfo ? 'block' : 'none',
-        transform: showInfo ? 'translateY(0%)' : 'translateY(100%)',
+        config: {
+            duration: 500, // Set the duration of the animation in milliseconds (e.g., 500ms)
+            ...config.default, // You can use other properties from the config object if needed
+          },
     });
 
     return(
@@ -26,7 +29,7 @@ export default function ProjectDisplay({title}){
             </div>
             {showInfo ? 
             <animated.div style={scrollUp} className="ProjDesc">
-                <h1>Yo</h1>
+                <h1>{title}</h1>
             </animated.div>
             : <div></div>}
         </div>
