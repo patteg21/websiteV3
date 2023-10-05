@@ -3,13 +3,16 @@ import { useSpring, animated, config } from "react-spring";
 
 export default function ProjectDisplay({title}){
     const[showInfo,setShowInfo] = useState(false)
+    const[blurEffect, setBlurEffect] = useState(null)
 
     function changeStateInfoTrue(){
         setShowInfo(true)
+        setBlurEffect("Blur-Effect")
     }
 
     function changeStateInfoFalse(){
         setShowInfo(false)
+        setBlurEffect(null)
     }
 
     const scrollUp = useSpring({
@@ -24,7 +27,7 @@ export default function ProjectDisplay({title}){
 
     return(
         <div className="ProjectDisplay" onMouseOver={changeStateInfoTrue} onMouseOut={changeStateInfoFalse}>
-            <div className="ProjShow">
+            <div className={`ProjShow ${blurEffect}`} >
                 <h1>{title}</h1>
             </div>
             {showInfo ? 

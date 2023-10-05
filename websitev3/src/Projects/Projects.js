@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import Footer from "../Footer";
 import ProjectContainer from "./ProjectContainer";
 
 import "./projects.css"
@@ -17,6 +18,7 @@ export default function Projects(){
         <animated.div className="Projects" style={fadeInOutMain}>
             <h1 className="text-center text-xl p-5">PROJECTS</h1>
             <ProjectContainer />
+            <Footer />
         </animated.div>
     )
 }
