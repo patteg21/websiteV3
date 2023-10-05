@@ -10,7 +10,7 @@ export default function TopBar(){
             <ul>
                 <Link className="NavLink" to="/"><li>Home<img src={Arrow}></img></li></Link>
                 <Link className="NavLink" to="/about"><li>About<img src={Arrow}></img></li></Link>
-                <Link className="NavLink" to="/resume"><li>Resume<img src={Arrow}></img></li></Link>
+                <Link className="NavLink" to="/projects"><li>Projects<img src={Arrow}></img></li></Link>
             </ul>
         </div>
     )

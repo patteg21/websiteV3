@@ -15,8 +15,8 @@ import Footer from "../Footer";
 
 export default function About(){
 
-    const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
-    const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+    const xValues = [5,10,15,20,25,30,35,40,45,50];
+    const yValues = [2,4,6,8,10,12,14,16,18,20];
     const data = {
       labels: xValues,
       datasets: [
@@ -24,7 +24,7 @@ export default function About(){
             label: "",
             backgroundColor: "rgba(0, 0, 255, 0.2)",
             borderColor: "rgba(0, 0, 255, 1)",
-            borderWidth: 1,
+            borderWidth: 2,
             data: yValues,
         },
       ],

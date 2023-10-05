@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './About/About';
 import Home from "./Home/Home"
+import Projects from './Projects/Projects';
 import TopBar from './TopBar';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <div className='ALL-PAGES'>
       <Routes> 
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>     
+        <Route path='/about' element={<About />}/>
+        <Route path='/projects' element={<Projects />}/>       
       </Routes>
     </div>
     </div>

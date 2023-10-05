@@ -19,8 +19,8 @@ export default function NavCube({setSnackBarShow, snackBarShow}){
                     </Link>
                 </span>
                 <span style={{'--i': 2}}>
-                    <Link to="/resume">
-                    <h1>Resume</h1>
+                    <Link to="/projects">
+                    <h1>Projects</h1>
                     </Link>
                 </span>
                 <span style={{'--i': 3}} className="HomeButton">
