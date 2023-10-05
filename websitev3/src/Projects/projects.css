@@ -5,7 +5,7 @@
 .Projects-Container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(140px, auto);
 }
 
 .Left-Projects{
@@ -32,10 +32,10 @@
     left: 0;
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center; 
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .ProjDesc{
@@ -46,7 +46,6 @@
     left: 0;
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center; 
     width: 100%;
     height: 100%;
@@ -60,5 +59,9 @@
 }
 
 .Project-Img{
-    height: 100%;
+   height: 100%;
+}
+
+.Demeter > img{
+    height: 50%;    
 }

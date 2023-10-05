@@ -29,15 +29,16 @@ export default function ProjectDisplay({title}){
 
     return(
         <div className="ProjectDisplay" onMouseOver={changeStateInfoTrue} onMouseOut={changeStateInfoFalse}>
-            <div className={`ProjShow ${blurEffect}`} >
+            <div className={`ProjShow ${title} ${blurEffect}`} >
+
                 <h1>{title}</h1>
+                <img className="Project-Img" src={Demeter}/>
+
             </div>
             {showInfo ? 
             <animated.div style={scrollUp} className="ProjDesc">
                 <h1>{title}</h1>
-                <div>
-                    <img className="Project-Img" src={Demeter}/>
-                </div>
+
             </animated.div>
             : <div></div>}
         </div>
