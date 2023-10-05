@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSpring, animated, config } from "react-spring";
 
+import Demeter from "./Demeter.png"
+
 export default function ProjectDisplay({title}){
     const[showInfo,setShowInfo] = useState(false)
     const[blurEffect, setBlurEffect] = useState(null)
@@ -33,6 +35,9 @@ export default function ProjectDisplay({title}){
             {showInfo ? 
             <animated.div style={scrollUp} className="ProjDesc">
                 <h1>{title}</h1>
+                <div>
+                    <img className="Project-Img" src={Demeter}/>
+                </div>
             </animated.div>
             : <div></div>}
         </div>
