@@ -30,10 +30,8 @@ export default function ProjectDisplay({title, pathToImage}){
     return(
         <div className="ProjectDisplay" onMouseOver={changeStateInfoTrue} onMouseOut={changeStateInfoFalse}>
             <div className={`ProjShow ${title} ${blurEffect}`} >
-
                 {/* <h1>{title}</h1> */}
                 <img className="Project-Img" src={pathToImage}/>
-
             </div>
             {showInfo ? 
             <animated.div style={scrollUp} className="ProjDesc">
