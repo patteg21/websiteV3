@@ -3,7 +3,7 @@ import { useSpring, animated, config } from "react-spring";
 
 import Demeter from "./Demeter.png"
 
-export default function ProjectDisplay({title}){
+export default function ProjectDisplay({title, pathToImage}){
     const[showInfo,setShowInfo] = useState(false)
     const[blurEffect, setBlurEffect] = useState(null)
 
@@ -31,8 +31,8 @@ export default function ProjectDisplay({title}){
         <div className="ProjectDisplay" onMouseOver={changeStateInfoTrue} onMouseOut={changeStateInfoFalse}>
             <div className={`ProjShow ${title} ${blurEffect}`} >
 
-                <h1>{title}</h1>
-                <img className="Project-Img" src={Demeter}/>
+                {/* <h1>{title}</h1> */}
+                <img className="Project-Img" src={pathToImage}/>
 
             </div>
             {showInfo ? 

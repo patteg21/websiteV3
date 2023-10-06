@@ -18,7 +18,6 @@
 .ProjectDisplay{
     position: relative;
     text-align: center;
-    
     padding: 5px;
     background-color: transparent;
     border: 2px solid rgb(142, 5, 194, .5);
@@ -31,11 +30,13 @@
     top: 0;
     left: 0;
     text-align: center;
+    align-items: center;
     display: flex;
-    align-items: center; 
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 .ProjDesc{
@@ -54,14 +55,35 @@
 }
 
 .Blur-Effect{
+    padding: 5px;
     filter: blur(10px);
-    transition: filter .4s ease-in-out ;
+    transition: all .4s ease-in-out ;
 }
 
 .Project-Img{
    height: 100%;
 }
 
+.Demeter{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.Demeter > h1{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+} 
+
 .Demeter > img{
-    height: 50%;    
+    background-color: #0c0e0d;
+    overflow: hidden;
+    align-items: center; 
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
