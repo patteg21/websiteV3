@@ -25,6 +25,7 @@
     border: 2px solid black;
     min-width: 250px;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .ProjShow {
@@ -57,7 +58,6 @@
 }
 
 .Blur-Effect{
-    padding: 10px;
     filter: blur(10px);
     transition: all .4s ease-in-out ;
 }
@@ -73,11 +73,24 @@
     justify-content: center; /* Center vertically */
 }
 
-.Demeter > h1{
-    position: absolute;
-    top: 10px;
-    width: 100%;
-} 
+
+.Predicition-Model{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 200%;
+}
+
+.Coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    background-color: #ffffff;
+    height: 125%;
+}
+
 
 .Demeter > img{
     background-color: #0c0e0d;
@@ -150,7 +163,9 @@
 
 .Background-Blur{
     filter: blur(10px);
-    width: 10%;
+    text-align: center;
+    width: 14.3%;
+
 }
 
 .Hide-Text{
