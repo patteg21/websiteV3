@@ -16,7 +16,7 @@ export default function Projects(){
 
     return(
         <animated.div className="Projects" style={fadeInOutMain}>
-            <h1 className="text-center text-xl p-2">PROJECTS</h1>
+            <h1 className="text-center text-xl p-2">?</h1>
             <ProjectContainer />
             <Footer />
         </animated.div>

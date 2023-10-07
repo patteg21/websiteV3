@@ -95,6 +95,7 @@
     display: flex;
     grid-column: 1/6;
     grid-row: 1/4;
+    
 }
 
 .Role-Selection > div{
@@ -104,6 +105,7 @@
     padding: 0; /* Reset padding */
     box-sizing: border-box;
     transition: all 1.2s linear;
+    overflow: hidden;
 }
 
 .Role-Selection > div > h1{
@@ -115,11 +117,11 @@
     text-align: center;
     align-items: center;
     display: flex;
+    transition: color .3s linear;
+    font-size: 30px;
+    overflow: hidden;
 }
 
-.Data-Role > h1{
-
-}
 
 .Role-Selection > div:hover{
     flex: 5;
@@ -138,8 +140,19 @@
 }
 
 .Background-Role{
+    transition: all 1s linear;
     position: absolute;
-    width: 100%;
-    text-align: left;
+    text-align: center;
+    width: 71.42%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Background-Blur{
     filter: blur(10px);
+    width: 10%;
+}
+
+.Hide-Text{
+    color: transparent;
 }
