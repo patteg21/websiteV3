@@ -1,6 +1,8 @@
 import React from "react";
 import SpecificRole from "./SpecificRole";
 
+import SoftwareDev from "./SoftwareDev";
+
 export default function RoleContainer(){
 
     return(
@@ -11,10 +13,12 @@ export default function RoleContainer(){
         />
         <SpecificRole classObject="Developer-Role"
         title="Software Developer"
+        component={<SoftwareDev />}
 
         />
         <SpecificRole classObject="BDR-Role"
         title="Business Development"
+
         />
     </div>
     )

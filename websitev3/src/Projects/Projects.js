@@ -17,8 +17,7 @@ export default function Projects(){
     });
 
     return(
-        <animated.div className="Projects" style={fadeInOutMain}>
-            <h1 className="text-center text-xl p-2">Explore More</h1>
+        <animated.div className="Projects p-10" style={fadeInOutMain}>
             <div className="Projects-Container">
                 <RoleContainer />
                 <ProjectContainer />

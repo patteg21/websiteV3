@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export default function SpecificRole({classObject, title}){
+export default function SpecificRole({classObject, title, component}){
     const [backgroundBlur, setBackgroundBlur] = useState("Background-Blur")
     const [hideText, setHideText] = useState(null)
 
@@ -22,7 +22,7 @@ export default function SpecificRole({classObject, title}){
             onMouseOut={handleMouseOut}>
             <h1 className={`${hideText}`}>{title}</h1>
             <div className={`Background-Role ${backgroundBlur}`}>
-                <h1 className="p-5 text-xl">{title}</h1>
+                {component}
             </div>
         </div>
     )

@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* rgb(216,62,134) */
+
 .Home{
     /* position: fixed; */
     background: radial-gradient(circle, black, rgb(142, 5, 194,0.2));
