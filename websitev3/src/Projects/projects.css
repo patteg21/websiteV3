@@ -129,8 +129,8 @@
 
 
 .Developer-Role{
-    border-right: 2px solid white;
-    border-left: 2px solid  white;
+    border-right: 2px solid rgb(142, 5, 194,0.3);
+    border-left: 2px solid  rgb(142, 5, 194,0.3);
     margin: 0px -2px;
     z-index: 1;
 }
