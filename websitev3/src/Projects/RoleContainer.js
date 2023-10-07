@@ -12,9 +12,15 @@ export default function RoleContainer(){
         </div>
         <div className="Developer-Role">
             <h1>Software Developer</h1>
+            <div className="Background-Role">
+                This is in the background
+            </div>
         </div>
         <div className="BDR-Role">
             <h1>Business Development</h1>
+            <div className="Background-Role">
+                This is in the background
+            </div>
         </div>
     </div>
     )
