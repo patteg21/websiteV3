@@ -1,23 +1,47 @@
 import React from "react";
 import ProjectDisplay from "./ProjectDisplay";
 
-import Demeter from "./Demeter.png"
-import Stock from "./stock.png"
-import Coffee from "./coffee.png"
+import Demeter from "./imgs/Demeter.png"
+import Stock from "./imgs/stock.png"
+import Coffee from "./imgs/coffee.png"
 import RoleContainer from "./RoleContainer";
 
 export default function ProjectContainer(){
 
     return(
-        <div className="Projects-Container">
-            <RoleContainer />
-            <div className="Left-Projects grid grid-cols-4 gap-4">
-                
-                <ProjectDisplay title="Demeter" pathToImage={Demeter}/>
-                <ProjectDisplay title="Stock Predicition-Model" pathToImage={Stock}/>
-                <ProjectDisplay title="Coffee & Bean"  pathToImage={Coffee}/>
-                <ProjectDisplay title="Portfolio Website" pathToImage="./Demeter.png"/>
-            </div>
-        </div>
+    <div className="Left-Projects grid grid-cols-4 gap-4">           
+        <ProjectDisplay 
+        title="Demeter" 
+        pathToImage={Demeter}
+        languages="Python | JavaScript"
+        technologies="Django | Azure LLM | SQLite"
+        githubLink=""
+
+        />
+        <ProjectDisplay 
+        title="Stock Predicition-Model" 
+        pathToImage={Stock}
+        languages="Python | JavaScript"
+        technologies="MongoDB | Express | Node | Flask | React | Tailwind | Docker | SciKit ML"
+        githubLink=""
+
+        />
+        <ProjectDisplay 
+        title="Coffee & Bean"  
+        pathToImage={Coffee}
+        languages="JavaScript"
+        technologies="MongoDB | Express | Node | React | MUI"
+        githubLink=""
+
+        />
+        <ProjectDisplay 
+        title="Portfolio Website" 
+        pathToImage="./Demeter.png"
+        languages="JavaScript"
+        technologies="Firebase | React | Tailwind | Three.js | Blender"
+        githubLink=""
+
+        />
+    </div>
     )
 }

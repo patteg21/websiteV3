@@ -55,6 +55,7 @@
     height: 100%;
     background: radial-gradient(circle, black, rgb(142, 5, 194,0.3));
     overflow: hidden;
+    cursor: pointer;
 }
 
 .Blur-Effect{
@@ -117,7 +118,7 @@
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
     box-sizing: border-box;
-    transition: all 1.2s linear;
+    transition: all 1s linear;
     overflow: hidden;
 }
 
