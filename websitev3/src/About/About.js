@@ -57,9 +57,11 @@ export default function About(){
     return(
         <animated.div style={fadeInOut} className="About">
            <TitleArea/>
-            {/* <div className="Data-Graph">
+           <div className="grid grid-cols-3 gap-4">
+              <div className="Data-Graph">
                 <Line data={data} options={options} />
-            </div> */}
+              </div>
+           </div>
             <Footer />
         </animated.div>
     )
