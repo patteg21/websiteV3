@@ -9,12 +9,10 @@ import { Line } from "react-chartjs-2";
 
 import AboutHeader from "./AboutHeader";
 import "./about.css"
-import TitleArea from "./DesiredTitle";
-import SkillsArea from "./SkillsArea";
+import TitleArea from "./TitleArea";
 import Footer from "../Footer";
 
 export default function About(){
-
     const xValues = [5,10,15,20,25,30,35,40,45,50];
     const yValues = [2,4,6,8,10,12,14,16,18,20];
     const data = {
@@ -58,13 +56,10 @@ export default function About(){
 
     return(
         <animated.div style={fadeInOut} className="About">
-            <div className="About-Grid">
-                <TitleArea/>
-                <SkillsArea />
-                <div className="Data-Graph">
-                    <Line data={data} options={options} />
-                </div>
-            </div>
+           <TitleArea/>
+            {/* <div className="Data-Graph">
+                <Line data={data} options={options} />
+            </div> */}
             <Footer />
         </animated.div>
     )

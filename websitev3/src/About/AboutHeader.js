@@ -35,13 +35,17 @@ export default function AboutHeader(){
     });
 
     useEffect(() => {
+        const element = document.getElementsByClassName("About") 
+        element[0].style.background = `radial-gradient(circle, black, ${colors[index]})`
 
         const interval = setInterval(() => {
           setIndex((prevIndex) => (prevIndex + 1) % words.length);
+          element[0].style.background = `radial-gradient(circle, black, ${colors[index+1]})`
         }, 1000);
+
     
         return () => clearInterval(interval); 
-    }, []);
+    }, [index]);
 
 
 

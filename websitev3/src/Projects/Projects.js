@@ -7,6 +7,8 @@ import RoleContainer from "./RoleContainer";
 
 import "./projects.css"
 
+import Demeter from "./imgs/Demeter.png"
+
 export default function Projects(){
 
     const fadeInOutMain = useSpring({
