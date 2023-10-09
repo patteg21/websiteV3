@@ -8,16 +8,16 @@ export default function RoleContainer(){
     return(
     <div className="Role-Selection grid grid-cols-3 text-center">
         <SpecificRole classObject="Data-Role" 
-        title="Data Analyst"
+        title="Data"
 
         />
         <SpecificRole classObject="Developer-Role"
-        title="Software Developer"
+        title="Software"
         component={<SoftwareDev />}
 
         />
         <SpecificRole classObject="BDR-Role"
-        title="Business Development"
+        title="People"
 
         />
     </div>
