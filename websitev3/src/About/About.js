@@ -13,6 +13,9 @@ import TitleArea from "./TitleArea";
 import Footer from "../Footer";
 
 export default function About(){
+
+    const inputData = [2,4,6,8,4,12,8,16,20,24]
+
     const xValues = [5,10,15,20,25,30,35,40,45,50];
     const yValues = [2,4,6,8,10,12,14,16,18,20];
     const data = {
@@ -23,7 +26,7 @@ export default function About(){
             backgroundColor: "rgba(0, 0, 255, 0.2)",
             borderColor: "rgba(0, 0, 255, 1)",
             borderWidth: 2,
-            data: yValues,
+            data: inputData,
         },
       ],
     };
