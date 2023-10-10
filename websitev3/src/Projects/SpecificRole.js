@@ -14,8 +14,6 @@ export default function SpecificRole({classObject, title, component}){
         setHideText(null)
     }
 
-    
-
     return(
         <div className={`${classObject}`} 
             onMouseOver={handleMouseOver} 

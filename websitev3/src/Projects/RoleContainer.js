@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SpecificRole from "./SpecificRole";
 
 import SoftwareDev from "./SoftwareDev";
+import PeopleRole from "./PeopleRole";
+import DataRole from "./DataRole";
 
 export default function RoleContainer(){
+
+
 
     return(
     <div className="Role-Selection grid grid-cols-3 text-center">
         <SpecificRole classObject="Data-Role" 
         title="Data"
-
+        component={<DataRole />}
         />
         <SpecificRole classObject="Developer-Role"
         title="Software"
@@ -18,7 +22,7 @@ export default function RoleContainer(){
         />
         <SpecificRole classObject="BDR-Role"
         title="People"
-
+        component={<PeopleRole />}
         />
     </div>
     )

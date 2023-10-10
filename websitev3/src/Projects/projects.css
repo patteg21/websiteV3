@@ -163,12 +163,18 @@
 }
 
 .Background-Blur{
-    filter: blur(10px);
+    filter: blur(100px);
     text-align: center;
-    width: 14.3%;
-
+    /* width: 14.3%; */
+    width: 33.3%;
+    overflow: hidden;
 }
 
 .Hide-Text{
     color: transparent;
+}
+
+.Data-Role:hover ~ .BDR-Role,
+.Data-Role:hover ~ .Developer-Role {
+    width: 14.3%;
 }
