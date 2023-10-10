@@ -174,7 +174,6 @@
     color: transparent;
 }
 
-.Data-Role:hover ~ .BDR-Role,
-.Data-Role:hover ~ .Developer-Role {
-    width: 14.3%;
+.DataRole{
+    
 }

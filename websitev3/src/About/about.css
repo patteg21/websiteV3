@@ -36,5 +36,16 @@
 }
 
 
-.Data-Graph{
+.PersonalInterests{
+  min-height: 150px;
 }
+
+.PersonalInterests > h1{
+  font-size: 25px;
+}
+
+.Draggable:hover{
+  border: dotted 1px gray;
+  margin: -1px;
+}
+

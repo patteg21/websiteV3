@@ -11,6 +11,7 @@ import AboutHeader from "./AboutHeader";
 import "./about.css"
 import TitleArea from "./TitleArea";
 import Footer from "../Footer";
+import PersonalInterests from "./PersonalInterests";
 
 export default function About(){
 
@@ -23,9 +24,12 @@ export default function About(){
 
     return(
         <animated.div style={fadeInOut} className="About">
-           <TitleArea/>
-           <div className="grid grid-cols-3 gap-4">
-           </div>
+            <TitleArea/>
+            <p className="text-center text-xs">{'('}ps. you can move the divs{')'}</p>
+            <div className="grid grid-cols-3 gap-4">
+                    <PersonalInterests />
+            </div>
+
             <Footer />
         </animated.div>
     )
