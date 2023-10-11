@@ -53,11 +53,17 @@ export default function Home(){
                     <h1 className="text-lg w-60">The Next Generation of <span className="text-primary text-lg">Software Development</span></h1>
                 </div>
 
-                <div className="Left-Side-Rotate" onMouseOver={slowDownNavCube}></div>
+                <div className="Left-Side-Rotate text-right" onMouseOver={slowDownNavCube}>
+                    <h1 className="p-20">Left</h1>
+                </div>
+
                 <div className={`Cube-Holder text-center ${turnDirection}`} onMouseOver={stopNavCube}>
                     <NavCube setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
                 </div> 
-                <div className="Right-Side-Rotate" onMouseOver={speedUpNavCube}></div>  
+
+                <div className="Right-Side-Rotate text-left" onMouseOver={speedUpNavCube}>
+                    <h1 className="p-20">Right</h1>
+                </div>  
 
                 <div className="Link-Area">
                     <p className="p-10 w-80"><a href="https://www.linkedin.com/in/gareth-patterson-6694441ab/">LinkedIn</a> 

@@ -8,7 +8,7 @@ export default function NavCube({setSnackBarShow, snackBarShow}){
         <div className="NavCube">
         <div className="Top-NavCube"></div>
             <div>
-            <span style={{'--i': 0}}>
+                <span style={{'--i': 0}}>
                     <Link to="/">
                     <h1>Home</h1>
                     </Link>
@@ -25,8 +25,8 @@ export default function NavCube({setSnackBarShow, snackBarShow}){
                 </span>
                 <span style={{'--i': 3}}>
                     <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
-                </span>
-            </div>    
+                </span>   
+            </div>   
         </div>
     )
 }
