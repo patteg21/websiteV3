@@ -7,11 +7,13 @@ export default function SpecificRole({classObject, title, component}){
     function handleMouseOver(){
         setBackgroundBlur(null)
         setHideText("Hide-Text")
+
     }
 
     function handleMouseOut(){
         setBackgroundBlur("Background-Blur")
         setHideText(null)
+
     }
 
     return(
