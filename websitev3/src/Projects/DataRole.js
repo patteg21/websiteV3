@@ -61,7 +61,7 @@ export default function DataRole(){
             <h1 className="m-5 text-xl">Data</h1>
             <div className="grid grid-cols-3">
                 <div className="col-span-2">
-                    <Bar data={data} options={options} />
+                    {/* <Bar data={data} options={options} /> */}
                 </div>
                 <div>
                     <h1>Data + Design</h1>
