@@ -1,5 +1,7 @@
 .Projects{
     background: radial-gradient(circle, black, rgb(142, 5, 194,0.2));
+    width: 100%;
+    overflow: hidden;
 }
 
 .Projects-Container{
@@ -175,5 +177,5 @@
 }
 
 .DataRole{
-    
+    height: 100%;
 }
