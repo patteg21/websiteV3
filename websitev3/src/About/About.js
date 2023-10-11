@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // https://www.copycat.dev/blog/react-draggable/#:~:text=const%20Draggable%20%3D%20require(%20'react,Draggable%2F%3E%20component%20around%20it.
 import Draggable, {DraggableCore} from "react-draggable";
 // https://www.npmjs.com/package/react-resizable?activeTab=code
 import { ResizableBox } from 'react-resizable';
 import { useSpring, animated } from 'react-spring';
-import Chart from 'chart.js/auto';
-import { Line } from "react-chartjs-2";
+
 
 import AboutHeader from "./AboutHeader";
 import "./about.css"
 import TitleArea from "./TitleArea";
 import Footer from "../Footer";
 import PersonalInterests from "./PersonalInterests";
+import Donut from "./Donut";
 
 export default function About(){
 
@@ -43,6 +43,7 @@ export default function About(){
                             <p>Political Science / History</p>  
                         </div>
                     </div>
+                    <Donut />
             </div>
 
             <Footer />
