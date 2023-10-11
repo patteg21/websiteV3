@@ -23,7 +23,7 @@ export default function NavCube({setSnackBarShow, snackBarShow}){
                     <h1>Projects</h1>
                     </Link>
                 </span>
-                <span style={{'--i': 3}} className="HomeButton">
+                <span style={{'--i': 3}}>
                     <HomeButton setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
                 </span>
             </div>    

@@ -25,9 +25,12 @@ export default function About(){
     return(
         <animated.div style={fadeInOut} className="About">
             <TitleArea/>
-            <p className="text-center text-xs">{'('}ps. you can move the divs{')'}</p>
+            <p className="text-center text-xs">{'('}ps. you can move the sections{')'}</p>
             <div className="grid grid-cols-3 gap-4">
                     <PersonalInterests />
+                    <div>
+                        <h1>Why Software?</h1>
+                    </div>
             </div>
 
             <Footer />

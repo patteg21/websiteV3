@@ -46,16 +46,18 @@ export default function HomeButton({setSnackBarShow, snackBarShow}){
 
     return(
     <div className="Get-Connected">
-        <input
-            ref={copyEmail}
-            type="hidden"
-            value="patteg7@gmail.com" 
-        />
-        <button 
-        onClick={handleConnectClick} 
-        className="connect-button">
-        Connect
-        </button>
+        <div className="Container-Home">
+            <input
+                ref={copyEmail}
+                type="hidden"
+                value="patteg7@gmail.com" 
+            />
+            <button 
+            onClick={handleConnectClick} 
+            className="connect-button">
+            Connect
+            </button>
+        </div>
     </div>
     )
 }

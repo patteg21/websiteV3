@@ -26,19 +26,34 @@
 }
 
 .Get-Connected{
+    width: 100%;
+    background-color: red;
+}
+
+.Container-Home{
+    background-color: black;
+    max-width: 300px;
+    max-height: 300px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .connect-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(142, 5, 194,.2);
+    border: 1px solid rgb(142, 5, 194);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
 }
 
 .connect-button:hover{
+    transform: translateY(-2px);
     filter: brightness(.5);
     cursor: pointer;
 
@@ -57,16 +72,6 @@ to {
     transform: scale(4);
     opacity: 0;
 }
-}
-
-.Link-Area{
-    grid-row:4;
-    text-align: center;
-    z-index: 1;
-}
-
-.Link-Area a:hover{
-    filter: brightness(.8);
 }
 
 .ResumeClick{
@@ -164,9 +169,6 @@ to {
     background: linear-gradient(black,rgb(142, 5, 194, .5));
 }
 
-.HomeButton:hover{
-    background-color: black;
-}
 
 .NavCube div span h1{
     font-size: 50px;
