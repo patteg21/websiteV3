@@ -126,6 +126,12 @@
     box-sizing: border-box;
 }
 
+.Left-Side-Rotate,
+.Right-Side-Rotate,
+.Cube-Holder {
+  transition: transform 0.3s ease; /* Adjust duration and easing function as needed */
+}
+
 .NavCube{
     position: relative;
     width: 300px;
@@ -135,63 +141,39 @@
     transition: all 1s ease;
 }
 
-.Normal-Rotate{
+.Normal-Rotate:hover{
+    animation-play-state: paused;
+}
+
+.Normal-Rotate {
     position: relative;
     width: 300px;
     height: 300px;
     transform-style: preserve-3d;
-    animation: animate 30s linear infinite;
-    transition: all 1s ease;
+    animation: rotate var(--duration, 10s) linear infinite;
 }
 
-.Left-Rotate{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-
-    animation: reverseAnimate 5s linear infinite;
-    transition: all 1s ease;
-}
-
-.Right-Rotate{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation:  speedUpAnimate 5s linear infinite;
-    transition: all 1s ease;
-}
-
-@keyframes reverseAnimate {
-    0%{
-        transform:  rotateY(0deg);
-        }
-        100%{
-            transform: rotateY(-360deg);
-        }
-
-}
-
-@keyframes speedUpAnimate {
-    0%{
+@keyframes rotate {
+    from {
         transform: rotateY(0deg);
-        }
-        100%{
-            transform:  rotateY(360deg);
-        }
-
-}
-
-
-@keyframes animate {
-    0%{
-    transform:rotateY(0deg);
     }
-    100%{
-        transform:rotateY(360deg);
+    to {
+        transform: rotateY(360deg);
     }
 }
+
+.Left-Rotate:hover + .Normal-Rotate {
+    --duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.Right-Rotate:hover + .Normal-Rotate {
+    --duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 
 .NavCube div{
     position: absolute;

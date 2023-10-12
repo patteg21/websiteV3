@@ -28,17 +28,6 @@ export default function Home(){
         transform: snackBarShow ? 'translateX(0%)' : 'translateX(100%)',
     });
 
-    function speedUpNavCube(){
-        setTurnDirection("Right-Rotate")
-    }
-
-    function slowDownNavCube(){
-        setTurnDirection("Left-Rotate")
-    }
-
-    function stopNavCube(){
-        setTurnDirection("Normal-Rotate")
-    }
 
 
     return(
@@ -53,17 +42,17 @@ export default function Home(){
                     <h1 className="text-lg w-60">The Next Generation of <span className="text-primary text-lg">Software Development</span></h1>
                 </div>
 
-                <div className="Left-Side-Rotate text-right" onMouseOver={slowDownNavCube}>
+                {/* <div className="Left-Side-Rotate text-right">
                     <h1 className="p-20">Left</h1>
-                </div>
+                </div> */}
 
-                <div className={`Cube-Holder text-center ${turnDirection}`} onMouseOver={stopNavCube}>
+                <div className={`Cube-Holder Normal-Rotate`}>
                     <NavCube setSnackBarShow={setSnackBarShow} snackBarShow={snackBarShow}/>
                 </div> 
-
-                <div className="Right-Side-Rotate text-left" onMouseOver={speedUpNavCube}>
+{/* 
+                <div className="Right-Side-Rotate text-left">
                     <h1 className="p-20">Right</h1>
-                </div>  
+                </div>   */}
 
                 <div className="Link-Area">
                     <p className="p-10 w-80"><a href="https://www.linkedin.com/in/gareth-patterson-6694441ab/">LinkedIn</a> 
