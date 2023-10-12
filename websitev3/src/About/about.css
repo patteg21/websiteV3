@@ -52,4 +52,5 @@
 .Donut-Container{
   width: 500px;
   height: 500px;
+  z-index: 10;
 }

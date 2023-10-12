@@ -6,6 +6,7 @@ import { ResizableBox } from 'react-resizable';
 import { useSpring, animated } from 'react-spring';
 
 
+
 import AboutHeader from "./AboutHeader";
 import "./about.css"
 import TitleArea from "./TitleArea";
@@ -32,18 +33,18 @@ export default function About(){
                         <h1>Why Software?</h1>
                     </div>
                     <div className="p-5">
-                        Education
+                        <h4 className="text-xl">Education</h4>
                         <div>
-                            <h1>The FlatIron School <span>August 2023 - Current</span></h1>
-                            <p>Software Engineering</p>
+                            <h1 className="text-lg">The FlatIron School <span>August 2023 - Current</span></h1>
+                            <p className="text-sm">Software Engineering</p>
 
                         </div>
                         <div>
-                            <h1>Rutgers University <span className="text-right">September 2019 - May 2022</span></h1>
-                            <p>Political Science / History</p>  
+                            <h1 className="text-lg">Rutgers University <span className="text-right">September 2019 - May 2022</span></h1>
+                            <p className="text-sm">Political Science & History | Italian Minor</p>  
                         </div>
                     </div>
-                    {/* <Donut /> */}
+                    <Donut />
             </div>
 
             <Footer />

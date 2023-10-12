@@ -6,6 +6,7 @@ import About from './About/About';
 import Home from "./Home/Home"
 import Projects from './Projects/Projects';
 import TopBar from './TopBar';
+import Tests from './Tests/Test';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Routes> 
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>
-        <Route path='/projects' element={<Projects />}/>       
+        <Route path='/projects' element={<Projects />}/>  
       </Routes>
     </div>
     </div>
