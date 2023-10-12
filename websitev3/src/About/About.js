@@ -44,7 +44,10 @@ export default function About(){
                             <p className="text-sm">Political Science & History | Italian Minor</p>  
                         </div>
                     </div>
-                    <Donut />
+                    <div className="row-span-2">
+                        <Donut />
+                    </div>
+
             </div>
 
             <Footer />
