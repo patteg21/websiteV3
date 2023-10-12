@@ -83,15 +83,15 @@ export default function Cube() {
     });
 
 
-    const red = 142 / 255;
-    const green = 5 / 255;
-    const blue = 194 / 255;
+    const red = 119 / 255;
+    const green = 166 / 255;
+    const blue = 247 / 255;
 
     const borderColor = new THREE.Color(red, green, blue);
 
-    const bgRed = 0 / 255;
-    const bgGreen = 0 / 255;
-    const bgBlue = 0 / 255;
+    const bgRed = 255 / 255;
+    const bgGreen = 255 / 255;
+    const bgBlue = 255 / 255;
 
     const bgColor = new THREE.Color(bgRed, bgGreen, bgBlue);
 

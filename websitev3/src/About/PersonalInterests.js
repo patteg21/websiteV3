@@ -11,7 +11,9 @@ export default function PersonalInterests(){
             <div className="PersonalInterests p-5 Draggable">
                 <h1 className="text-left c-primary">Interests</h1>
                 <div className="grid grid-cols-2 gap-2">
-
+                    <ul>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </Draggable>

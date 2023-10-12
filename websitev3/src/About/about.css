@@ -5,7 +5,8 @@
 
 
 .About{
-    background: radial-gradient(circle, black, rgb(142, 5, 194,0.2));
+  padding: 0px 20px;
+    /* background: radial-gradient(circle, white, rgb(119, 166, 247,0.2)); */
 }
 
 .HomeHeader{
@@ -14,7 +15,7 @@
   width: 100%;
 }
 
-
+ 
 .Home-Header{
   padding: 10px 0px 0px 0px;
   min-width: 535px;
@@ -35,6 +36,12 @@
   width: 30px;
 }
 
+.About-Grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+}
 
 .PersonalInterests{
   min-height: 150px;
@@ -50,6 +57,11 @@
 }
 
 .Donut-Container{
-  
+  width: 400px;
+  height: 400px;
   z-index: 10;
+}
+
+.Donut-Div{
+  grid-row: 2/5;
 }

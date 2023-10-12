@@ -13,13 +13,13 @@
 
 .TopBar{
     z-index: 10;
-    background-color: black;
-    width: 100%;
+    background-color: white;
+    width: 100%; 
     min-height: 40px;
     max-height: 40px;
     position: fixed;
     text-align: center;
-    box-shadow: 0 0 5px 5px rgb(142, 5, 194,0.5);
+    box-shadow: 0 0 5px 5px rgb(119, 166, 247,0.5);
 }
 .TopBar ul{ 
     list-style: none;
@@ -28,14 +28,13 @@
 }
 
 .TopBar li{
-    color: #8E05C2;
+    color:rgb(119, 166, 247);
     display: inline-block;
     margin: 10px 5px 0px 5px;
     padding: 0px;
 }
 
 .TopBar li > img{
-    color: #8E05C2;
     display: inline-block;
     margin: 0px 5px 0px 5px;
     padding: 0px;

@@ -13,7 +13,7 @@ import threeImg from "./imgs/Three.png"
 
 export default function AboutHeader(){
     const [index, setIndex] = useState(0)
-    const colors = ["#60dbfb","#01b9d8","#015a33","#f1c40e","#68a063","white","#95c38c","#433d83"]
+    const colors = ["#60dbfb","#01b9d8","#015a33","#f1c40e","#68a063","black","#95c38c","#433d83"]
     const colorsBackground = [
         "RGB(96, 219, 251, .3)",
         "RGB(1, 185, 216, .3)",
@@ -46,11 +46,11 @@ export default function AboutHeader(){
 
     useEffect(() => {
         const element = document.getElementsByClassName("About") 
-        element[0].style.background = `radial-gradient(circle, black, ${colorsBackground[index]})`
+        element[0].style.background = `radial-gradient(circle, white, ${colorsBackground[index]})`
 
         const interval = setInterval(() => {
           setIndex((prevIndex) => (prevIndex + 1) % words.length);
-          element[0].style.background = `radial-gradient(circle, black, ${colorsBackground[index]})`
+          element[0].style.background = `radial-gradient(circle, white, ${colorsBackground[index]})`
           element[0].style.backgroundClip = 'content-box'
         }, 2000);
 
