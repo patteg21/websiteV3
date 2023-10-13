@@ -6,13 +6,23 @@ import { useSpring, animated } from 'react-spring';
 
 
 export default function PersonalInterests(){
+
     return(
         <Draggable>
             <div className="PersonalInterests p-5 Draggable">
                 <h1 className="text-left c-primary">Interests</h1>
                 <div className="grid grid-cols-2 gap-2">
-                    <ul>
-                        <li></li>
+                    <ul className="text-lg" >Professional
+                        <li className="text-sm">Data Utilization</li>
+                        <li className="text-sm">Machine Learning</li>
+                        <li className="text-sm">Secure Coding</li>
+                        <li className="text-sm">UX/UI</li>
+                    </ul>
+                    <ul className="text-lg">Personal
+                        <li className="text-sm">Rowing {"("}Crew{")"}</li>
+                        <li className="text-sm">Chess</li>
+                        <li className="text-sm">Blender - 3D Modeling</li>
+                        <li className="text-sm">Video Games</li>
                     </ul>
                 </div>
             </div>

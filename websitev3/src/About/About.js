@@ -13,6 +13,7 @@ import TitleArea from "./TitleArea";
 import Footer from "../Footer";
 import PersonalInterests from "./PersonalInterests";
 import Donut from "./Donut";
+import FunFacts from "./FunFacts";
 
 export default function About(){
 
@@ -47,9 +48,8 @@ export default function About(){
                     <div className="Donut-Div">
                         <Donut />
                     </div>
-
+                    <FunFacts/>
             </div>
-
             <Footer />
         </animated.div>
     )

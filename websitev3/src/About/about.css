@@ -57,11 +57,18 @@
 }
 
 .Donut-Container{
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   z-index: 10;
 }
 
 .Donut-Div{
   grid-row: 2/5;
+}
+
+
+.FunFacts{
+  grid-column: 3;
+  grid-row: 3;
+  padding: 10;
 }

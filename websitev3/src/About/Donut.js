@@ -22,7 +22,7 @@ export default function Donut(){
                     <pointLight position={[1, 2, 1]} />
                     <Suspense fallback={null}>
                         <GltfModel modelPath={DonutModel} scale={1.6}/>
-                        {/* <OrbitControls /> */}
+                        <OrbitControls />
                     </Suspense>
                 </Canvas>
             </div>
