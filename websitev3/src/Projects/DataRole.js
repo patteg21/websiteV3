@@ -10,7 +10,7 @@ export default function DataRole(){
             <h1 className="m-5 text-xl">Data</h1>
             <div className="grid grid-cols-3">
                 <div className="col-span-1">
-                    <h1 className="text-xl">Data ToolKit</h1>
+                    <h1 className="text-xl">ToolKit</h1>
                     <ul className="text-left">
                         <li>Pandas</li>
                         <li>NumPy</li>
@@ -19,9 +19,9 @@ export default function DataRole(){
                         <li>TensorFlow</li>
                     </ul>
                 </div>
-                <div>
-                    <h1 className="text-xl" >Data + Design</h1>
-                    <p></p>
+                <div className="col-span-2">
+                    <h1 className="text-xl">Data + Design</h1>
+                    <h3>Empower with </h3>
                 </div>
                 <div></div>
             </div>
