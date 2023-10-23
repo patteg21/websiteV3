@@ -6,7 +6,6 @@ import About from './About/About';
 import Home from "./Home/Home"
 import Projects from './Projects/Projects';
 import TopBar from './TopBar';
-import Tests from './Tests/Test';
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SpecificRole from "./SpecificRole";
 
-import SoftwareDev from "./SoftwareDev";
-import PeopleRole from "./PeopleRole";
-import DataRole from "./DataRole";
+import SoftwareDev from "./Software/SoftwareDev";
+import PeopleRole from "./People/PeopleRole";
+import DataRole from "./Data/DataRole";
 
 export default function RoleContainer(){
 
