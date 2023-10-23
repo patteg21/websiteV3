@@ -27,13 +27,11 @@ export default function About(){
     return(
         <animated.div style={fadeInOut} className="About">
             <TitleArea/>
-            <p className="text-center text-xs">{'('}ps. you can move the sections{')'}</p>
+            <p className="text-center text-xs">{'('}ps. you can move the donut{')'}</p>
             <div className="About-Grid grid">
                     <PersonalInterests />
-                    <div className="p-5">
-                        <h1>Why Software?</h1>
-                    </div>
-                    <div className="p-5">
+                    <div></div>
+                    <div className="p-5 text-center">
                         <h4 className="text-xl">Education</h4>
                         <div>
                             <h1 className="text-lg">The FlatIron School <span>August 2023 - Current</span></h1>
@@ -48,7 +46,6 @@ export default function About(){
                     <div className="Donut-Div">
                         <Donut />
                     </div>
-                    <FunFacts/>
             </div>
             <Footer />
         </animated.div>

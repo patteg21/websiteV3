@@ -14,8 +14,8 @@ export default function Donut(){
     console.log(DonutModel)
 
     return(
-        <Draggable className="">
-            <div className="Donut-Container Draggable" id="Donut-Container">
+        <Draggable className="text-center">
+            <div className="Donut-Container Draggable mx-auto" id="Donut-Container">
                 <Canvas>
                     <ambientLight intensity={0.9} />
                     <spotLight position={[10, 10, 10]} angle={0.10} penumbra={0.1} />

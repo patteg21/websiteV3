@@ -8,9 +8,8 @@ import { useSpring, animated } from 'react-spring';
 export default function PersonalInterests(){
 
     return(
-        <Draggable>
-            <div className="PersonalInterests p-5 Draggable">
-                <h1 className="text-left c-primary">Interests</h1>
+            <div className="PersonalInterests p-5 text-center">
+                <h1 className="text-primary">Interests</h1>
                 <div className="grid grid-cols-2 gap-2">
                     <ul className="text-lg" >Professional
                         <li className="text-sm">Data Utilization</li>
@@ -26,6 +25,5 @@ export default function PersonalInterests(){
                     </ul>
                 </div>
             </div>
-        </Draggable>
     )
 }
