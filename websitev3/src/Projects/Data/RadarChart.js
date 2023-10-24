@@ -31,7 +31,7 @@ export default function RadarChart(){
                 datasets: [
                 {
                     label: 'Skills',
-                    data: [10, 7, 6, 8, 4], // Replace these values with your data points
+                    data: [10, 9, 6, 8, 4], // Replace these values with your data points
                     backgroundColor: 'rgb(119, 166, 247,0.2)', // Background color of the area
                     borderColor: 'rgb(119, 166, 247,1)', // Border color of the lines
                     borderWidth: 2, // Width of the lines

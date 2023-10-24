@@ -2,6 +2,10 @@
     padding: 20px;
 }
 
+.RadarChart{
+    min-width: 300px
+}
+
 .checkImg{
     margin-left: 10px;
     width: 20px;
