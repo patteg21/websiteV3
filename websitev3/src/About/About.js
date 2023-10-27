@@ -4,6 +4,7 @@ import Draggable, {DraggableCore} from "react-draggable";
 // https://www.npmjs.com/package/react-resizable?activeTab=code
 import { ResizableBox } from 'react-resizable';
 import { useSpring, animated } from 'react-spring';
+import SVG from 'react-svg';
 
 
 
@@ -13,7 +14,8 @@ import TitleArea from "./TitleArea";
 import Footer from "../Footer";
 import PersonalInterests from "./PersonalInterests";
 import Donut from "./Donut";
-import FunFacts from "./FunFacts";
+
+import NJMap from "./NJMap";
 
 export default function About(){
 
@@ -42,6 +44,9 @@ export default function About(){
                             <h1 className="text-lg">Rutgers University <span className="text-right">September 2019 - May 2022</span></h1>
                             <p className="text-sm">Political Science & History | Italian Minor</p>  
                         </div>
+                    </div>
+                    <div>
+                        <NJMap />
                     </div>
                     <div className="Donut-Div">
                         <Donut />

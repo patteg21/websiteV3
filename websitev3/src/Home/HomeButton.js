@@ -34,10 +34,10 @@ export default function HomeButton({setSnackBarShow, snackBarShow}){
 
         const jsConfetti = new JSConfetti()
         jsConfetti.addConfetti({
-            confettiRadius: 3,
+            confettiRadius: 5,
             confettiNumber: 500,
             confettiColors: [
-                'rgb(142, 5, 194)', 'rgb(142, 5, 194)', '#DDA0DD', '#8F00FF', '#DA70D6', '#BA55D3',
+                'rgb(119, 166, 247)', 'rgb(119, 166, 247)', '#93c1ff', '#b1ddff', '#cef9ff', '#ecfeff',
               ],
         })
 
