@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(140px, auto);
+    min-width: 1000px
 }
 
 
