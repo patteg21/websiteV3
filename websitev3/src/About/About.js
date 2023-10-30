@@ -36,17 +36,16 @@ export default function About(){
                     <div className="p-5 text-center">
                         <h4 className="text-xl">Education</h4>
                         <div>
-                            <h1 className="text-lg">The FlatIron School <span>August 2023 - Current</span></h1>
+                            <h1 className="py-2">The FlatIron School <span className="text-sm">Aug 2023 - Current</span></h1>
                             <p className="text-sm">Software Engineering</p>
 
                         </div>
                         <div>
-                            <h1 className="text-lg">Rutgers University <span className="text-right">September 2019 - May 2022</span></h1>
+                            <h1 className="py-2">Rutgers University <span className="text-right text-sm">Sep 2019 - May 2022</span></h1>
                             <p className="text-sm">Political Science & History | Italian Minor</p>  
                         </div>
                     </div>
                     <div>
-                        <NJMap />
                     </div>
                     <div className="Donut-Div">
                         <Donut />

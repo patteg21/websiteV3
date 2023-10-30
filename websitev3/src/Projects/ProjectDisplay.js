@@ -29,10 +29,10 @@ export default function ProjectDisplay({title, pathToImage, languages, technolog
     return(
         <div className="ProjectDisplay" onMouseOver={changeStateInfoTrue} onMouseOut={changeStateInfoFalse}>
             <div className={`ProjShow ${title} ${blurEffect}`} >
-                <img className="Project-Img" src={pathToImage}/>
+                <img className="Project-Img mx-auto" src={pathToImage}/>
             </div>
             {showInfo ? 
-            <a href="https://www.google.com/"><animated.div style={scrollUp} className="ProjDesc">
+            <a><animated.div style={scrollUp} className="ProjDesc">
                 <h1 className="text-lg">{title}</h1>
                 <p className="text-sm">Languages: {languages}</p>
                 <p className="text-xs p-5">Stack: {technologies}</p>

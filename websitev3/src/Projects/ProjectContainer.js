@@ -4,6 +4,7 @@ import ProjectDisplay from "./ProjectDisplay";
 import Demeter from "./imgs/Demeter.png"
 import Stock from "./imgs/stock.png"
 import Coffee from "./imgs/coffee.png"
+import CVIcon from "./imgs/cv.png"
 import RoleContainer from "./RoleContainer";
 
 export default function ProjectContainer(){
@@ -22,7 +23,7 @@ export default function ProjectContainer(){
         title="Stock Predicition-Model" 
         pathToImage={Stock}
         languages="Python | JavaScript"
-        technologies="MongoDB | Express | Node | Flask | React | Tailwind | Docker | SciKit ML"
+        technologies="MongoDB | Express | Node | Flask | React | Tailwind | TensorFlow"
         githubLink=""
 
         />
@@ -36,7 +37,7 @@ export default function ProjectContainer(){
         />
         <ProjectDisplay 
         title="Portfolio Website" 
-        pathToImage="./Demeter.png"
+        pathToImage={CVIcon}
         languages="JavaScript"
         technologies="Firebase | React | Tailwind | Three.js | Blender"
         githubLink=""
