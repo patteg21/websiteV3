@@ -41,7 +41,6 @@ export default function ProjectContainer(){
         languages="JavaScript"
         technologies="Firebase | React | Tailwind | Three.js | Blender"
         githubLink=""
-
         />
     </div>
     )
