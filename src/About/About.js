@@ -33,7 +33,7 @@ export default function About(){
             <div className="About-Grid grid">
                     <PersonalInterests />
                     <div></div>
-                    <div className="p-5 text-center">
+                    <div className="EducationSection p-5 text-center">
                         <h4 className="text-xl">Education</h4>
                         <div>
                             <h1 className="py-2">The FlatIron School <span className="text-sm">Aug 2023 - Current</span></h1>

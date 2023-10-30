@@ -6,15 +6,19 @@
 
 .Home{
     /* position: fixed; */
+    position: absolute;
     overflow: hidden;
     background: radial-gradient(circle, white, rgb(119, 166, 247,0.2));
 }
+
+
 
 .Intro-Section{ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(40px,auto);
 }
+
 
 .Home-Welcome{
     z-index: 0;
@@ -185,8 +189,6 @@
     transform-style: preserve-3d;
 }
 
-.NavCube div:hover{
-}
 
 .NavCube div span{
     position: absolute;

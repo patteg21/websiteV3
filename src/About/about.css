@@ -43,6 +43,7 @@
 
 .PersonalInterests{
   min-height: 150px;
+  min-width: 250px;
 }
 
 .PersonalInterests > h1{
@@ -73,4 +74,8 @@
   grid-column: 3;
   grid-row: 3;
   padding: 10;
+}
+
+.EducationSection{
+  min-width: 250px;
 }
