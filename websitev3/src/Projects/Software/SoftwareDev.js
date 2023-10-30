@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import CodeBlock from "./CodeBlock";
 import "./software.css"
 
+import SoftwareSkills from "./SoftwareSkills";
+
 export default function SoftwareDev(){
    const [language, setLanguage] = useState(null)
 
@@ -21,9 +23,10 @@ export default function SoftwareDev(){
 
     return(
         <div className="SoftwareDev p-5">
-            <h1 className="text-primary p-5 text-xl">The Full-Stack Experience</h1>
+            <h1 className="text-primary text-xl">The Full-Stack Experience</h1>
             <h3 className="text-center text-lg">Utilizing {language}</h3>
             <CodeBlock language={language}/>
+            <SoftwareSkills />
         </div>
     )
 }

@@ -5,11 +5,7 @@
 .CodeBlock{
     margin: 5px 5px;
     padding: 10px;
-    background: radial-gradient(circle,rgb(68,70,84) 30%,rgb(52,53,64) 50%);
-    color: white;
-
     text-align: left;
-    border-radius: 5px;
 }
 
 .CodeDisplay > div{
